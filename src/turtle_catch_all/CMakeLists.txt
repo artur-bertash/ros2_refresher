@@ -18,7 +18,7 @@ ament_target_dependencies(turtle_spawner rclcpp turtlesim my_turtle_interfaces)
 
 
 add_executable(turtle_controller src/turtle_controller.cpp)
-ament_target_dependencies(turtle_controller rclcpp geometry_msgs my_turtle_interfaces)
+ament_target_dependencies(turtle_controller rclcpp geometry_msgs my_turtle_interfaces turtlesim)
 
 
 INSTALL(TARGETS 
